@@ -6,20 +6,10 @@
     <description>Recent content in software on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Sep 2016 10:44:46 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 18 Aug 2016 16:54:27 +0200</lastBuildDate>
     
 	<atom:link href="https://fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>FLaP v0.4 is Out!</title>
-      <link>https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/</link>
-      <pubDate>Tue, 06 Sep 2016 10:44:46 +0200</pubDate>
-      
-      <guid>https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/</guid>
-      <description>I released yesterday version 0.4 of FLaP! It now flattens LaTeX files included using the LaTeX subfiles package. Besides, I fixed several bugs that had been reported on GitHub, including:
- Fix flattening \bibliography stored in a subdirectory Fix bug on \graphicpath directives using double curly braces (e.g., \graphicpath{{./img/}}). Fix bugs on \input directives:  \input directives that specify the .tex extension are properly handled; Relative paths specified in \input are considered from the root directory of the latex project, as LaTeX does.</description>
-    </item>
     
     <item>
       <title>Software</title>

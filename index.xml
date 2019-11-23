@@ -22,16 +22,6 @@ While reading &amp;ldquo;Signals and Boundaries&amp;rdquo; (Holland 2012), I won
     </item>
     
     <item>
-      <title>Permutation Partity</title>
-      <link>https://fchauvel.github.io/2017/01/16/permutation-partity/</link>
-      <pubDate>Mon, 16 Jan 2017 14:50:59 +0100</pubDate>
-      
-      <guid>https://fchauvel.github.io/2017/01/16/permutation-partity/</guid>
-      <description>Everyday, I try to solve one simple programming challenge. Last week, I stumble upon the &amp;ldquo;Larry&amp;rsquo;s Array&amp;rdquo; challenge, a variation around the 15 tiles puzzle. I explain below the problem and the though process that I followed to reach a solution.
-The Problem The problem is actually very brief. Given a permutation of the $N$ first integer&amp;mdash; say $(1,3,2,4,6,5)$&amp;mdash; we must decide whether it is possible to sort it using only 3-step wide circular permutations, one such that transforms $(a,b,c)$ into $(b, c, a)$.</description>
-    </item>
-    
-    <item>
       <title>The Reviews I Wish to Get</title>
       <link>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</link>
       <pubDate>Wed, 16 Nov 2016 14:49:59 +0100</pubDate>
@@ -39,16 +29,6 @@ The Problem The problem is actually very brief. Given a permutation of the $N$ f
       <guid>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</guid>
       <description>As a researcher, I submit research articles for peer-review. The reviews I get are unfortunately too often deceptive&amp;mdash;not only because most are rebuttals. These reviews are of very little use, beyond improving my broken English.
 Below are the key points I wish reviewers would discuss. As a matter of fact, I do also consider them when I write reviews. While I am aware of the time it takes to write a detailed review, I am convinced that it does help moving research in the right direction.</description>
-    </item>
-    
-    <item>
-      <title>FLaP v0.4 is Out!</title>
-      <link>https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/</link>
-      <pubDate>Tue, 06 Sep 2016 10:44:46 +0200</pubDate>
-      
-      <guid>https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/</guid>
-      <description>I released yesterday version 0.4 of FLaP! It now flattens LaTeX files included using the LaTeX subfiles package. Besides, I fixed several bugs that had been reported on GitHub, including:
- Fix flattening \bibliography stored in a subdirectory Fix bug on \graphicpath directives using double curly braces (e.g., \graphicpath{{./img/}}). Fix bugs on \input directives:  \input directives that specify the .tex extension are properly handled; Relative paths specified in \input are considered from the root directory of the latex project, as LaTeX does.</description>
     </item>
     
     <item>
@@ -112,15 +92,6 @@ My current objective is to detect, at design-time, performances issues due to in
  Hui Song, Amal Elgammal, Vivek Nallur, Franck Chauvel, Franck Fleurey, Siobh&amp;aacute;n Clarke: On Architectural Diversity of Dynamic Adaptive Systems. ICSE (2) 2015: 595&amp;ndash;598
  Hui Song, Franck Chauvel, Franck Fleurey, Nicolas Ferry, Arnor Solberg: Consolas: A Model-Based Tool for Automatic Configuration and Deployment of Cloud Applications. P&amp;amp;D@MoDELS 2015: 5&amp;ndash;8
  Maksym Lushpenko, Nicolas Ferry, Hui Song, Franck Chauvel, Arnor Solberg: Using Adaptation Plans to Control the Behavior of Models@runtime.</description>
-    </item>
-    
-    <item>
-      <title>good to great</title>
-      <link>https://fchauvel.github.io/2016/02/14/good-to-great/</link>
-      <pubDate>Sun, 14 Feb 2016 16:11:58 +0530</pubDate>
-      
-      <guid>https://fchauvel.github.io/2016/02/14/good-to-great/</guid>
-      <description>I read Good to Great in January 2016. An awesome read sharing detailed analysis on how good companies became great. Let&amp;rsquo;s try LaTeX equations $$\sum_{i=1}^{n} x^{i+\alpha}$$!.</description>
     </item>
     
   </channel>
