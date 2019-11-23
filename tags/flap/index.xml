@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>software on Franck Chauvel</title>
-    <link>https://fchauvel.github.io/categories/software/</link>
-    <description>Recent content in software on Franck Chauvel</description>
+    <title>FLaP on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/tags/flap/</link>
+    <description>Recent content in FLaP on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Sep 2016 10:44:46 +0200</lastBuildDate>
     
-	<atom:link href="https://fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fchauvel.github.io/tags/flap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/</guid>
       <description>I released yesterday version 0.4 of FLaP! It now flattens LaTeX files included using the LaTeX subfiles package. Besides, I fixed several bugs that had been reported on GitHub, including:
  Fix flattening \bibliography stored in a subdirectory Fix bug on \graphicpath directives using double curly braces (e.g., \graphicpath{{./img/}}). Fix bugs on \input directives:  \input directives that specify the .tex extension are properly handled; Relative paths specified in \input are considered from the root directory of the latex project, as LaTeX does.</description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>https://fchauvel.github.io/software/</link>
-      <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
-      
-      <guid>https://fchauvel.github.io/software/</guid>
-      <description>I basically like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. Below are the application that I developed:
- MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.g., queues, AQM, auto-scaling, timeouts, back-off, &amp;hellip;). MAD runs discrete events simulation and estimates performances including reliability, availability and response time to name a few.</description>
     </item>
     
   </channel>

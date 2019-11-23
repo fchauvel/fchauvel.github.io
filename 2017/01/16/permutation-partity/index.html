@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>404 Page not found &middot; Franck Chauvel</title>
+    <title>Permutation Partity &middot; Franck Chauvel</title>
     <meta name="generator" content="Hugo 0.59.1" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
       <meta name="description" content="Franck&#39;s Personal Page">
     
     
-    <link rel="canonical" href="https://fchauvel.github.io/404.html"/>
+    <link rel="canonical" href="https://fchauvel.github.io/2017/01/16/permutation-partity/"/>
     <link rel="icon" href="https://fchauvel.github.io/favicon.ico">
     <link rel="apple-touch-icon" href="https://fchauvel.github.io/apple-touch-icon.png"/>
     <link rel="stylesheet" href="https://fchauvel.github.io/css/style.css">
@@ -20,20 +20,32 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://fchauvel.github.io/404.html" />
-
+    <meta property="og:title" content="Permutation Partity" />
+<meta property="og:description" content="Everyday, I try to solve one simple programming challenge. Last week, I stumble upon the &ldquo;Larry&rsquo;s Array&rdquo; challenge, a variation around the 15 tiles puzzle. I explain below the problem and the though process that I followed to reach a solution.
+The Problem The problem is actually very brief. Given a permutation of the $N$ first integer&mdash; say $(1,3,2,4,6,5)$&mdash; we must decide whether it is possible to sort it using only 3-step wide circular permutations, one such that transforms $(a,b,c)$ into $(b, c, a)$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fchauvel.github.io/2017/01/16/permutation-partity/" />
+<meta property="article:published_time" content="2017-01-16T14:50:59+01:00" />
+<meta property="article:modified_time" content="2017-01-16T14:50:59+01:00" />
 
     
-    <meta itemprop="name" content="404 Page not found">
-<meta itemprop="description" content="">
+    <meta itemprop="name" content="Permutation Partity">
+<meta itemprop="description" content="Everyday, I try to solve one simple programming challenge. Last week, I stumble upon the &ldquo;Larry&rsquo;s Array&rdquo; challenge, a variation around the 15 tiles puzzle. I explain below the problem and the though process that I followed to reach a solution.
+The Problem The problem is actually very brief. Given a permutation of the $N$ first integer&mdash; say $(1,3,2,4,6,5)$&mdash; we must decide whether it is possible to sort it using only 3-step wide circular permutations, one such that transforms $(a,b,c)$ into $(b, c, a)$.">
 
+
+<meta itemprop="datePublished" content="2017-01-16T14:50:59&#43;01:00" />
+<meta itemprop="dateModified" content="2017-01-16T14:50:59&#43;01:00" />
+<meta itemprop="wordCount" content="591">
+
+
+
+<meta itemprop="keywords" content="" />
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Permutation Partity"/>
+<meta name="twitter:description" content="Everyday, I try to solve one simple programming challenge. Last week, I stumble upon the &ldquo;Larry&rsquo;s Array&rdquo; challenge, a variation around the 15 tiles puzzle. I explain below the problem and the though process that I followed to reach a solution.
+The Problem The problem is actually very brief. Given a permutation of the $N$ first integer&mdash; say $(1,3,2,4,6,5)$&mdash; we must decide whether it is possible to sort it using only 3-step wide circular permutations, one such that transforms $(a,b,c)$ into $(b, c, a)$."/>
 <meta name="twitter:site" content="@fchauvel1"/>
 
     
@@ -266,22 +278,301 @@
 
     <section id="main">
     
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
     <div class="article-inner">
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                <center>
-                <h1>
-                    404 - page not found
-                </h1>
-                <h3>
-                    The content you&#39;re looking for doesn&#39;t seem to exist.
-                </h3>
-                </center>
-            </p>
+        
+
+        <header class="article-header">
+    <a href="https://fchauvel.github.io/2017/01/16/permutation-partity/">
+    <h1 class="article-title" itemprop="name">
+        Permutation Partity
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-01-16 14:50:59 &#43;0100 CET" itemprop="datePublished">2017-01-16</time>
+            &middot;
+            591
+            words
+            &middot;
+            3
+            minute read
         </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
     </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<p>Everyday, I try to solve one simple programming challenge. Last week,
+I stumble upon
+the
+<a href="https://www.hackerrank.com/challenges/larrys-array">&ldquo;Larry&rsquo;s Array&rdquo; challenge</a>,
+a variation around
+the <a href="https://en.wikipedia.org/wiki/15_puzzle">15 tiles puzzle</a>. I
+explain below the problem and the though process that I followed to
+reach a solution.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>The problem is actually very brief. Given a permutation of the $N$
+first integer&mdash; say $(1,3,2,4,6,5)$&mdash; we must decide whether
+it is possible to sort it using only 3-step wide circular
+permutations, one such that transforms $(a,b,c)$ into $(b, c, a)$.</p>
+
+<p>For instance, if we consider $(1,4,3,2)$, the rotation of $(4,3,2)$ is
+enough to sort the permutation.</p>
+
+<h2 id="the-thought-process">The Thought Process</h2>
+
+<p>At first, I was clueless, so I tried brute force, that is
+basic
+<a href="https://gist.github.com/fchauvel/bff48ff298ae708c0c4576f13d2b01b2">depth-first search</a>. Although
+it does not scale, it gave me a way to test what permutation
+can be sorted. Considering permutations of length 3 in lexicographical
+order, I got:</p>
+
+<pre><code class="language-no-code">(1,2,3) YES 
+(1,3,2) NO 
+(2,1,3) NO 
+(2,3,1) YES
+(3,1,2) YES 
+(3,2,1) NO 
+</code></pre>
+
+<p>To better visualise patterns, I depict them as a string where &lsquo;O&rsquo;
+marks sortable permutations. For permutations of length 3, 4 and 5, we
+get the following patterns, where &lsquo;O&rsquo; marks sortable permutations.</p>
+
+<pre><code class="language-no-code">N=3: O--OO-
+N=4: O--OO--OO--OO--OO--OO--O
+N=5: O--OO--OO--OO--OO--OO--O-OO--OO--OO--OO--OO--OO-O--OO--OO...
+                             ^                        ^ 
+</code></pre>
+
+<p>At first, it seemed that the pattern <code>O--O</code> repeats itself. That
+is permutations whose rank has a remainder of 0 or 3 when divided
+by 4 would be &ldquo;sortable&rdquo; ($r \equiv 0 \lor r \equiv
+3\;(\textrm{mod} \, 4)$). Unfortunately, it is not that simple: The
+pattern varies when we try with $N = 5$.</p>
+
+<p>Looking at the case where $N=3$, we can see a smaller pattern <code>O-</code>
+that is reversed every time the first digit is incremented.</p>
+
+<pre><code class="language-nocode">N=3: O- 
+     -O
+     O-
+	 
+N=4: O--OO- 
+     -OO--O
+     O--OO-
+     -OO--O
+	 
+N=5: O--OO--OO--OO--OO--OO--O
+     -OO--OO--OO--OO--OO--OO-
+     O--OO--OO--OO--OO--OO--O
+     -OO--OO--OO--OO--OO--OO-
+     O--OO--OO--OO--OO--OO--O
+</code></pre>
+
+<p>As shown in the figure below, the pattern for $N=5$ alternates the
+pattern for $N=4$ and its direct inverse. Similarly, the pattern for
+$N=4$ alternates the pattern for $N=3$ and its direct
+opposite. Finally, the pattern for $N=3$ alternates the pattern for
+$N=2$ and its inverse.</p>
+
+<p><img src="/franck/images/parity_pattern.png" alt="Nested parity patterns for N=5" /></p>
+
+<p>My solution is therefore the following:</p>
+
+<ol>
+<li><p>Compute the rank of the given permutation, that is its position in
+the lexical ordering of permutation.</p></li>
+
+<li><p>Decide whether the rank is sortable, that if it maps to an &ldquo;O&rdquo; or
+a &ldquo;-&rdquo; in the above illustration.</p></li>
+</ol>
+
+<p>The first step boils down to count the number of permutation that can
+smaller than the given one. The following function does this
+recursively:</p>
+
+<pre><code class="language-python">def rank(array):
+    if len(array) == 0:
+        return 0
+    digits = [n for n in array[1:] if n &lt; array[0]]
+    return len(digits) * math.factorial(len(array)-1) + rank(array[1:])
+</code></pre>
+
+<p>The second step simply breaks down navigate this nesting of
+patterns. For instance, provided that $N=5$, if the rank is 44 then we
+know that are in the second row (each row contains 24 permutations,
+$!(N-1) = !4 = 24$). Within this second row, we would have the rank 20
+($=44-24$). This rank would in the fourth repetition of the $N=3$
+pattern. There we would have the rank 2, and which is not
+sortable. Here is function that does this:</p>
+
+<pre><code class="language-python">def sortable(rank, scale):
+    if scale == 2:
+        return rank == 0
+    bound = math.factorial(scale-1)
+    if rank // bound  % 2 == 0:
+        return sortable(rank % bound, scale-1)
+    else:
+        return not sortable(rank % bound, scale-1)
+</code></pre>
+
+<p>We can use this function to visualise how swaps of elements generate
+permutation and mark those that are sortable. Here is the result for
+120 permutations possible for $N=5$. The permutation parity actually
+reflects whether the minimum number of swaps needed to sort a
+permutation is odd or even.</p>
+
+<p><img src="/franck/images/permutations.png" alt="The graph of permutations" /></p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://fchauvel.github.io/2017/01/16/permutation-partity/" data-id="aad43135aef920b7686f84ce029d338d" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://fchauvel.github.io/2017/01/16/permutation-partity/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">The Reviews I Wish to Get</div>
+    </a>
+    
+
+    
+    <a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Exploring Emergent Auto-Scaling</div>
+    </a>
+    
+</nav>
+
+
 </article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fchauvel-net" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
 
     </section>
 
@@ -299,7 +590,7 @@
                 <div class="item-thumbnail">
                     <a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" class="thumbnail">
                     
-                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="404 Page not found" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="Permutation Partity" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -344,7 +635,7 @@
                 <div class="item-thumbnail">
                     <a href="https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/" class="thumbnail">
                     
-                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="404 Page not found" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="Permutation Partity" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -370,7 +661,7 @@
                 <div class="item-thumbnail">
                     <a href="https://fchauvel.github.io/2016/09/06/flap-v0.4-is-out/" class="thumbnail">
                     
-                        <span style="background-image:url(https://fchauvel.github.io/banner.png)" alt="404 Page not found" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://fchauvel.github.io/banner.png)" alt="Permutation Partity" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -396,7 +687,7 @@
                 <div class="item-thumbnail">
                     <a href="https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/" class="thumbnail">
                     
-                        <span style="background-image:url(https://fchauvel.github.io/images/code.jpg)" alt="404 Page not found" class="thumbnail-image"></span>
+                        <span style="background-image:url(https://fchauvel.github.io/images/code.jpg)" alt="Permutation Partity" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
