@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kanban on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/tags/kanban/</link>
+    <description>Recent content in kanban on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Aug 2016 15:45:36 +0200</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/tags/kanban/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting more productive!</title>
+      <link>https://fchauvel.github.io/2016/08/23/getting-more-productive/</link>
+      <pubDate>Tue, 23 Aug 2016 15:45:36 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/2016/08/23/getting-more-productive/</guid>
+      <description>I am often disappointed by my daily organisation: I discard many of my projects, and most of them do not live to my expectations. One thing that especially bugs me is to fail making progress on multiple projects at the same time. I am diving into one particular project and, when I emerge two weeks later, every other things have gone bad. This is especially true for development tasks, where I get bogged down, consistently.</description>
+    </item>
+    
+  </channel>
+</rss>

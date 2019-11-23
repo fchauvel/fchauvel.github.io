@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/categories/</link>
+    <description>Recent content in Categories on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>research</title>
+      <link>https://fchauvel.github.io/categories/research/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/categories/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sys-admin</title>
+      <link>https://fchauvel.github.io/categories/sys-admin/</link>
+      <pubDate>Sun, 28 Aug 2016 07:38:22 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/categories/sys-admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>https://fchauvel.github.io/categories/productivity/</link>
+      <pubDate>Tue, 23 Aug 2016 15:45:36 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/categories/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about-me</title>
+      <link>https://fchauvel.github.io/categories/about-me/</link>
+      <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/categories/about-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://fchauvel.github.io/categories/software/</link>
+      <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/categories/software/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

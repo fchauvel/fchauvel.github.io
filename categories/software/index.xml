@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/categories/software/</link>
+    <description>Recent content in software on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Aug 2016 16:54:27 +0200</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Software</title>
+      <link>https://fchauvel.github.io/software/</link>
+      <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/software/</guid>
+      <description>I basically like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. Below are the application that I developed:
+ MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.g., queues, AQM, auto-scaling, timeouts, back-off, &amp;hellip;). MAD runs discrete events simulation and estimates performances including reliability, availability and response time to name a few.</description>
+    </item>
+    
+  </channel>
+</rss>

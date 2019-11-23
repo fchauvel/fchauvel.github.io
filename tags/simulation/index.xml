@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simulation on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/tags/simulation/</link>
+    <description>Recent content in simulation on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring Emergent Auto-Scaling</title>
+      <link>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</guid>
+      <description>I noted that services tend to become smaller and more intelligent. Microservices for instance now encompass various resiliency mechanisms such as active queue management (AQM), auto-scaling or retry/back-off to name only a few. As services are distributed in nature, I am wondering what behaviour will emerge from interactions of such autonomous (micro-)services.
+While reading &amp;ldquo;Signals and Boundaries&amp;rdquo; (Holland 2012), I wonder about the simplest model that could lead, for instance, to a feature like auto-scaling.</description>
+    </item>
+    
+  </channel>
+</rss>

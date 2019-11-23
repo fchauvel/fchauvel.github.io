@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Franck Chauvel</title>
+    <link>https://fchauvel.github.io/</link>
+    <description>Recent content on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring Emergent Auto-Scaling</title>
+      <link>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</guid>
+      <description>I noted that services tend to become smaller and more intelligent. Microservices for instance now encompass various resiliency mechanisms such as active queue management (AQM), auto-scaling or retry/back-off to name only a few. As services are distributed in nature, I am wondering what behaviour will emerge from interactions of such autonomous (micro-)services.
+While reading &amp;ldquo;Signals and Boundaries&amp;rdquo; (Holland 2012), I wonder about the simplest model that could lead, for instance, to a feature like auto-scaling.</description>
+    </item>
+    
+    <item>
+      <title>The Reviews I Wish to Get</title>
+      <link>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</link>
+      <pubDate>Wed, 16 Nov 2016 14:49:59 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</guid>
+      <description>As a researcher, I submit research articles for peer-review. The reviews I get are unfortunately too often deceptive&amp;mdash;not only because most are rebuttals. These reviews are of very little use, beyond improving my broken English.
+Below are the key points I wish reviewers would discuss. As a matter of fact, I do also consider them when I write reviews. While I am aware of the time it takes to write a detailed review, I am convinced that it does help moving research in the right direction.</description>
+    </item>
+    
+    <item>
+      <title>How to Automatically Deploy on Gandi?</title>
+      <link>https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</link>
+      <pubDate>Sun, 28 Aug 2016 07:38:22 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</guid>
+      <description>I host fchauvel.net (this very website) on Gandi.net. I use Hugo to generate it and I explain below how, each time I update its content, I automatically upload the new website.
+Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from which I have chosen simple hosting. Generally, I use rsync or scp to upload all my content in one go, but Gandi restricts access to either SFTP or GIT.</description>
+    </item>
+    
+    <item>
+      <title>Getting more productive!</title>
+      <link>https://fchauvel.github.io/2016/08/23/getting-more-productive/</link>
+      <pubDate>Tue, 23 Aug 2016 15:45:36 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/2016/08/23/getting-more-productive/</guid>
+      <description>I am often disappointed by my daily organisation: I discard many of my projects, and most of them do not live to my expectations. One thing that especially bugs me is to fail making progress on multiple projects at the same time. I am diving into one particular project and, when I emerge two weeks later, every other things have gone bad. This is especially true for development tasks, where I get bogged down, consistently.</description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://fchauvel.github.io/software/</link>
+      <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/software/</guid>
+      <description>I basically like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. Below are the application that I developed:
+ MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.g., queues, AQM, auto-scaling, timeouts, back-off, &amp;hellip;). MAD runs discrete events simulation and estimates performances including reliability, availability and response time to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Research Activities</title>
+      <link>https://fchauvel.github.io/research/</link>
+      <pubDate>Wed, 17 Aug 2016 14:53:31 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/research/</guid>
+      <description>Research Interests I am a software engineer who ended up doing applied research. My interests therefore revolve about programming and software engineering.
+ Complex Adaptive Systems fascinates me, especially distributed ones. I observe that as software systems grow in both in size and complexity, they resemble complex adaptive systems, whose behaviour is difficult to understand, let alone to predict.
+ Agile Software Development and the software craftsmanship ideas struck me as obvious once we know them.</description>
+    </item>
+    
+    <item>
+      <title>Who is Franck?</title>
+      <link>https://fchauvel.github.io/biography/</link>
+      <pubDate>Wed, 17 Aug 2016 13:29:59 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/biography/</guid>
+      <description>It is me, the guy who publish this website.
+What am I looking for? I am a programmer researching for better ways to design and implement self-adaptive systems, that is systems that automatically adjust to their environment. I am looking for opportunities to evaluate research ideas in industrial settings, especially around Cloud technologies.
+My current objective is to detect, at design-time, performances issues due to interactions between feedback loops, using simulation of architectural models.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://fchauvel.github.io/publication-list/</link>
+      <pubDate>Wed, 17 Aug 2016 13:16:39 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/publication-list/</guid>
+      <description>Below is the list of my publications. You may find it as well on DBLP.
+ Hui Song, Amal Elgammal, Vivek Nallur, Franck Chauvel, Franck Fleurey, Siobh&amp;aacute;n Clarke: On Architectural Diversity of Dynamic Adaptive Systems. ICSE (2) 2015: 595&amp;ndash;598
+ Hui Song, Franck Chauvel, Franck Fleurey, Nicolas Ferry, Arnor Solberg: Consolas: A Model-Based Tool for Automatic Configuration and Deployment of Cloud Applications. P&amp;amp;D@MoDELS 2015: 5&amp;ndash;8
+ Maksym Lushpenko, Nicolas Ferry, Hui Song, Franck Chauvel, Arnor Solberg: Using Adaptation Plans to Control the Behavior of Models@runtime.</description>
+    </item>
+    
+  </channel>
+</rss>

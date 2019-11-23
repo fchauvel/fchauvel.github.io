@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Franck Chauvel</title>
+    <link>https://fchauvel.github.io/tags/</link>
+    <description>Recent content in Tags on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    
+	<atom:link href="https://fchauvel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>microservices</title>
+      <link>https://fchauvel.github.io/tags/microservices/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/microservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://fchauvel.github.io/tags/python/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self-organisation</title>
+      <link>https://fchauvel.github.io/tags/self-organisation/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/self-organisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simulation</title>
+      <link>https://fchauvel.github.io/tags/simulation/</link>
+      <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>https://fchauvel.github.io/tags/research/</link>
+      <pubDate>Wed, 16 Nov 2016 14:49:59 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://fchauvel.github.io/tags/review/</link>
+      <pubDate>Wed, 16 Nov 2016 14:49:59 +0100</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gandi.net</title>
+      <link>https://fchauvel.github.io/tags/gandi.net/</link>
+      <pubDate>Sun, 28 Aug 2016 07:38:22 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/gandi.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kanban</title>
+      <link>https://fchauvel.github.io/tags/kanban/</link>
+      <pubDate>Tue, 23 Aug 2016 15:45:36 +0200</pubDate>
+      
+      <guid>https://fchauvel.github.io/tags/kanban/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

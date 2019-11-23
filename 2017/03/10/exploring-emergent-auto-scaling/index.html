@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Exploring Emergent Auto-Scaling &middot; Franck Chauvel</title>
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Franck Chauvel">
+    
+      <meta name="description" content="A pocket-sized experiment to explore the dynamics of emergent auto-scaling">
+    
+    
+    <link rel="canonical" href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/"/>
+    <link rel="icon" href="https://fchauvel.github.io/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fchauvel.github.io/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="https://fchauvel.github.io/css/style.css">
+    <link rel="stylesheet" href="https://fchauvel.github.io/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fchauvel.github.io/css/monokai.css">
+    <link rel="stylesheet" href="https://fchauvel.github.io/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Exploring Emergent Auto-Scaling" />
+<meta property="og:description" content="A pocket-sized experiment to explore the dynamics of emergent auto-scaling" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" />
+<meta property="article:published_time" content="2017-03-10T12:38:06+01:00" />
+<meta property="article:modified_time" content="2017-03-10T12:38:06+01:00" />
+
+    
+    <meta itemprop="name" content="Exploring Emergent Auto-Scaling">
+<meta itemprop="description" content="A pocket-sized experiment to explore the dynamics of emergent auto-scaling">
+
+
+<meta itemprop="datePublished" content="2017-03-10T12:38:06&#43;01:00" />
+<meta itemprop="dateModified" content="2017-03-10T12:38:06&#43;01:00" />
+<meta itemprop="wordCount" content="1113">
+
+
+
+<meta itemprop="keywords" content="self-organisation,microservices,simulation,python," />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Exploring Emergent Auto-Scaling"/>
+<meta name="twitter:description" content="A pocket-sized experiment to explore the dynamics of emergent auto-scaling"/>
+<meta name="twitter:site" content="@fchauvel1"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="https://fchauvel.github.io/" id="logo">
+          
+          <i class="logo" style="background-image: url('https://fchauvel.github.io/css/images/logo.png')"></i>
+          
+          <span class="site-title">Franck Chauvel</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="https://fchauvel.github.io/biography/">Who&#39;s Franck?</a>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="https://fchauvel.github.io/research/">Research</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fchauvel.github.io/publication-list/">Publications</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fchauvel.github.io/software/">Software</a>
+          
+          
+          
+          <a class="main-nav-link" href="https://fchauvel.github.io/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="https://fchauvel.github.io/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="https://fchauvel.github.io/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="https://fchauvel.github.io/biography/">Who&#39;s Franck?</a></td>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fchauvel.github.io/research/">Research</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fchauvel.github.io/publication-list/">Publications</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fchauvel.github.io/software/">Software</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="https://fchauvel.github.io/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="https://fchauvel.github.io/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://fchauvel.github.io/css/images/avatar.png">
+      
+      <h2 id="name">Franck Chauvel</h2>
+      <h3 id="title">Programmer doing Research</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Ålesund, Norway</span>
+      
+          <a id="follow" href="https://github.com/fchauvel">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        4
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          8
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/fchauvel" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+<td><a href="//bitbucket.com/fchauvel" target="_blank" title="Bitbucket"><i class="fa fa-bitbucket"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//linkedin.com/in/franck.chauvel@gmail.com" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/fchauvel1" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="https://fchauvel.github.io/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <img src="https://fchauvel.github.io/images/books.jpg" class="article-banner">
+        
+
+        <header class="article-header">
+    <a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/">
+    <h1 class="article-title" itemprop="name">
+        Exploring Emergent Auto-Scaling
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-03-10 12:38:06 &#43;0100 CET" itemprop="datePublished">2017-03-10</time>
+            &middot;
+            1113
+            words
+            &middot;
+            6
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="https://fchauvel.github.io/categories/research">research</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="https://fchauvel.github.io/tags/self-organisation">self-organisation</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://fchauvel.github.io/tags/microservices">microservices</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://fchauvel.github.io/tags/simulation">simulation</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="https://fchauvel.github.io/tags/python">python</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<p>I noted that services tend to become smaller and more
+intelligent. Microservices for instance now encompass various
+resiliency mechanisms such as active queue management (AQM),
+auto-scaling or retry/back-off to name only a few. As services are
+distributed in nature, I am wondering what behaviour will emerge from
+interactions of such autonomous (micro-)services.</p>
+
+<p>While reading &ldquo;Signals and Boundaries&rdquo; (Holland 2012), I wonder about
+the simplest model that could lead, for instance, to a feature like
+auto-scaling. I describe below my shot at it.</p>
+
+<h1 id="eas-0-minimal-emergent-auto-scaling">EAS-0, Minimal Emergent Auto-scaling</h1>
+
+<p>As a simple example, I concocted EAS-0, the simplest model I could
+think of, where autonomous services should scale up and down without
+the need for a centralised load-balancer. This model&mdash;a tad
+mercantile, in fact venal&mdash;relies on the following assumptions:</p>
+
+<ol>
+<li><p><em>Clients:</em></p>
+
+<ol>
+<li>Each client follows the &ldquo;publish-find-invoke&rdquo; principle that
+underlies service-oriented architecture (SOA). Clients first
+query a registry to know available endpoints, and then select
+the one they prefer, for whatever reasons be it price,
+performance, etc. Here, all clients choose the service with
+the shortest response time.</li>
+</ol></li>
+
+<li><p><em>Services:</em></p>
+
+<ol>
+<li><p>Each service processes requests at a fixed rate. When too many
+requests arrive, they are placed in an waiting queue, ideally
+an infinite one. Services process requests in the order they
+arrive.</p></li>
+
+<li><p>Each service publishes its performance (i.e., their expected
+response time) so that clients can decided whether it is a
+good candidate.</p></li>
+</ol></li>
+
+<li><p><em>Money as Resources</em></p>
+
+<ol>
+<li><p>Each service has a budget, in euros for instance.</p></li>
+
+<li><p>Each service pays to exist: it shall pay for the time it
+runs. This captures roughly services that rely on cloud
+resources, for which someone gets a bill, eventually.</p></li>
+
+<li><p>Each service makes money by processing requests. Clients pay a fix
+price per request.</p></li>
+</ol></li>
+
+<li><p><em>Life and Death</em></p>
+
+<ol>
+<li><p>Once a service is rich enough, it can purchase new resources to
+run a copy of itself. This new instance automatically registers
+so that clients know about it, consequently.</p></li>
+
+<li><p>A service dies when it runs out of money. Clients cannot
+invoke it anymore and the remaining requests are marked as
+failed.</p></li>
+</ol></li>
+</ol>
+
+<h1 id="population-dynamics">Population Dynamics</h1>
+
+<p>To explore the dynamics of the EAS-0 model, I wrote
+a
+<a href="https://gist.github.com/fchauvel/e8059c21686d73b18180ab4d62cc5b07">simulation in Python</a>. I
+am looking to see how well the population of server behaves:</p>
+
+<ol>
+<li><p>From the perspective of the service providers, that is how many
+servers are up and running, and therefore costing money.</p></li>
+
+<li><p>From the perspective of the client, that is what is the response
+time of the system.</p></li>
+</ol>
+
+<p>In the experiment I report below, I used the following initial
+conditions:</p>
+
+<ul>
+<li>One single server with a budget of 1 &euro;</li>
+<li>All servers have the same service rate ($r_S$): they all process 2
+req/s.</li>
+<li>Each request brings in 1.2 &euro; ($m$) ;</li>
+<li>One second of execution costs 2 &euro; ($c_L$);</li>
+<li>Reproduction costs a server 10 &euro; ($c_R$);</li>
+<li>The clients send a total of 50 req/s ($r_A$).</li>
+</ul>
+
+<h2 id="resource-consumption">Resource Consumption?</h2>
+
+<p>Simulations suggest that the total number of server converges toward
+the maximal number of servers that can makes profit on a given
+workload , that is toward the
+<a href="https://en.wikipedia.org/wiki/Carrying_capacity">carrying capacity</a>
+in Ecology. This carrying capacity is the number of server that can
+ideally sustain or feed on a given environment, here on a given
+arrival rate of requests. In EAS-0, the carrying capacity $C$ is given
+by $C = r_A * \frac{m}{c_L}$. In my simulation, for instance, where each
+requests brings in 1.2 &euro;, and each second costs 1 &euro;, 10
+req/s suffice to sustain 6 servers.</p>
+
+<p><img src="/franck/images/sensitivity_to_living_cost.png" alt="Fig. 1 Evolution of the number of servers for different living costs" /></p>
+
+<p>Fig. 1 shows how the number of servers evolves with different living
+cost ($c$). The dashed line show the carrying capacity associated with
+each living cost. It suggests that this living cost impacts both the
+total number of servers that will eventually survive&mdash;the &ldquo;steady
+state&rdquo; in Control theory parlance&mdash;but also affects the time it
+takes for the system to react&mdash;the raising time.</p>
+
+<p>The purple curve (i.e., $c$ = 2.25 &euro;) may connote the existence
+of a &ldquo;tipping point&rdquo;, beyond which, the system suddenly does not
+stabilise anymore.</p>
+
+<p><img src="/franck/images/sensitivity_to_reproduction_threshold.png" alt="Fig. 2 Evolution of the number of servers for different reproduction thresholds." /></p>
+
+<p>Fig. 2 shows how the population of servers evolves for different
+reproduction thresholds ($b_r$). It suggests that the reproduction
+threshold also drives up the &ldquo;raising time&rdquo;. This makes sense as,
+the more expensive the reproduction, the slower the servers
+multiply.</p>
+
+<h2 id="response-time">Response-time</h2>
+
+<p>The other important aspect is the response time, from the client&rsquo;s
+perspective, especially.</p>
+
+<p>For a single server, the response time is the time it will take to
+process all the requests in its queue, plus the request currently under
+processing. Formally, we get $t_r = \frac{q_i + 1}{r_S}$, where $q_i$ is the
+number of requests in the queue of Agent i, and $r_S$ the service
+rate.</p>
+
+<p><img src="/franck/images/response_time_vs_living_cost.png" alt="Fig. 3&amp;nbsp;Evolution of the response time for different living cost ($c$)" /></p>
+
+<p>Fig. 3 portrays how the response time evolves for different cost of
+live ($c$). It indicates that the cost of life strongly influences the
+time needed for the response time to stabilise. The purple curve ($c$ =
+2.25 &euro;) again supports the idea of a tipping point, beyond
+which, the response time would not settle down anymore.</p>
+
+<p><img src="/franck/images/response_time_vs_reproduction_cost.png" alt="Fig. 4&amp;nbsp;Evolution of the response for different reproduction cost" /></p>
+
+<p>Fig. 4 illustrates how the response time evolves for several
+reproduction thresholds. These results imply that the reproduction
+cost also drives the time needed to stabilise the response time, but
+that the response time eventually settle down very close to the
+individual service time.</p>
+
+<h1 id="related-work">Related Work</h1>
+
+<p>I found several attempts to build auto-scaling through self-organisation.</p>
+
+<p>The Scarce framework (Bonvin et al., 2011) also uses &ldquo;economical
+agents&rdquo; that migrate or provision software components/service to
+maximise the utility of these components. These agents, which are
+deployed on virtual machines (VM), communicate to reach consensus and
+solve a distributed allocation optimisation problem.</p>
+
+<h1 id="what-next">What Next?</h1>
+
+<p>The dynamic of EAS-0 is more complicated that I anticipated. It makes
+me think of several questions:</p>
+
+<ol>
+<li><p>Could we build a mathematical model that would capture the
+behaviour of EAS-0?</p></li>
+
+<li><p>Could <em>diversity</em> helps improve the reaction of the population, as
+bees do to control hive&rsquo;s temperature (Jones et al., 2004). As all
+servers share the same reproduction cost ($c_R$) and service rate
+($r_S$), generations emerges wherein servers simultaneously
+reproduce, which leads to spikes in the response-time and resource
+consumption.</p></li>
+
+<li><p>Service differentiation? What about requests that are not all
+similar, just like service requests that target specific
+operations. Different operation may require more or less
+computational power, and in turn, lead to different service rate.?</p></li>
+</ol>
+
+<h1 id="references">References</h1>
+
+<dl>
+<dt>Bonvin et al., 2011</dt>
+<dd>N. Bonvin, T. G. Papaioannou and K. Aberer, 2011. &ldquo;Autonomic SLA-Driven
+Provisioning for Cloud Applications,&rdquo; In Proceedings of the 11th IEEE/ACM
+International Symposium on Cluster, Cloud and Grid Computing,
+Newport Beach, CA, 2011, pp. 434&ndash;443.</dd>
+<dt>Jones et al., 2004</dt>
+<dd>Jones, J.C., Myerscough, M.R., Graham, S. and Oldroyd,
+B.P., 2004. Honey bee nest thermoregulation: diversity promotes
+stability. Science, 305(5682), pp.402&ndash;404.</dd>
+<dt>Holland 2012</dt>
+<dd>John H. Holland. 2012. Signals and Boundaries: Building Blocks for
+Complex Adaptive Systems. The MIT Press.</dd>
+</dl>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" data-id="d0bd048329f5d513f0d0c5d1d52b7659" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+    <a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">The Reviews I Wish to Get</div>
+    </a>
+    
+
+    
+</nav>
+
+
+</article>
+
+
+<section id="comments">
+    <div id="disqus_thread">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fchauvel-net" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</section>
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="Exploring Emergent Auto-Scaling" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://fchauvel.github.io/categories/research">
+                        research
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" class="title">Exploring Emergent Auto-Scaling</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-03-10 12:38:06 &#43;0100 CET" itemprop="datePublished">2017-03-10</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fchauvel.github.io/images/books.jpg)" alt="Exploring Emergent Auto-Scaling" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://fchauvel.github.io/categories/research">
+                        research
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/" class="title">The Reviews I Wish to Get</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-11-16 14:49:59 &#43;0100 CET" itemprop="datePublished">2016-11-16</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fchauvel.github.io/images/code.jpg)" alt="Exploring Emergent Auto-Scaling" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://fchauvel.github.io/categories/sys-admin">
+                        sys-admin
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/" class="title">How to Automatically Deploy on Gandi?</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-08-28 07:38:22 &#43;0200 CEST" itemprop="datePublished">2016-08-28</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="https://fchauvel.github.io/2016/08/23/getting-more-productive/" class="thumbnail">
+                    
+                        <span style="background-image:url(https://fchauvel.github.io/images/process.jpg)" alt="Exploring Emergent Auto-Scaling" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="https://fchauvel.github.io/categories/productivity">
+                        productivity
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="https://fchauvel.github.io/2016/08/23/getting-more-productive/" class="title">Getting more productive!</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-08-23 15:45:36 &#43;0200 CEST" itemprop="datePublished">2016-08-23</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/categories/about-me">
+                    about-me
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/categories/productivity">
+                    productivity
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/categories/research">
+                    research
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/categories/software">
+                    software
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/categories/sys-admin">
+                    sys-admin
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/gandi.net">
+                    gandi.net
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/kanban">
+                    kanban
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/microservices">
+                    microservices
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/python">
+                    python
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/research">
+                    research
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/review">
+                    review
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/self-organisation">
+                    self-organisation
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://fchauvel.github.io/tags/simulation">
+                    simulation
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="https://fchauvel.github.io/tags/gandi.net" style="font-size: 12px;">gandi.net</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/kanban" style="font-size: 12px;">kanban</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/microservices" style="font-size: 12px;">microservices</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/python" style="font-size: 12px;">python</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/research" style="font-size: 12px;">research</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/review" style="font-size: 12px;">review</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/self-organisation" style="font-size: 12px;">self-organisation</a>
+        
+        
+        <a href="https://fchauvel.github.io/tags/simulation" style="font-size: 12px;">simulation</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://fchauvel.github.io/fancybox/jquery.fancybox.pack.js"></script>
+<script src="https://fchauvel.github.io/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
