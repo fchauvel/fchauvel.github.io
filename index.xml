@@ -56,8 +56,9 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
       <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
       
       <guid>https://fchauvel.github.io/software/</guid>
-      <description>I basically like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. Below are the application that I developed:
- MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.g., queues, AQM, auto-scaling, timeouts, back-off, &amp;hellip;). MAD runs discrete events simulation and estimates performances including reliability, availability and response time to name a few.</description>
+      <description>I like building software and I am lucky enough to get the opportunity to develop open source tools as part of my job. Below are some I have contributed to:
+ CAMP helps developers amplify integration tests and configuration tests. Given a test sample and variability models CAMP generates, build and execute your tests on many alternatives environments.
+ MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.</description>
     </item>
     
     <item>
@@ -88,10 +89,9 @@ My current objective is to detect, at design-time, performances issues due to in
       <pubDate>Wed, 17 Aug 2016 13:16:39 +0200</pubDate>
       
       <guid>https://fchauvel.github.io/publication-list/</guid>
-      <description>Below is the list of my publications. You may find it as well on DBLP.
- Hui Song, Amal Elgammal, Vivek Nallur, Franck Chauvel, Franck Fleurey, Siobh&amp;aacute;n Clarke: On Architectural Diversity of Dynamic Adaptive Systems. ICSE (2) 2015: 595&amp;ndash;598
- Hui Song, Franck Chauvel, Franck Fleurey, Nicolas Ferry, Arnor Solberg: Consolas: A Model-Based Tool for Automatic Configuration and Deployment of Cloud Applications. P&amp;amp;D@MoDELS 2015: 5&amp;ndash;8
- Maksym Lushpenko, Nicolas Ferry, Hui Song, Franck Chauvel, Arnor Solberg: Using Adaptation Plans to Control the Behavior of Models@runtime.</description>
+      <description>According to Google Scholar, I have authored more than 50 publications in international peer-reviewed venues, totalling 1 060 citations with H-index 18. Below is the list of my publications. You may find it as well on DBLP.
+International Journals  Nicolas Ferry, Franck Chauvel, Hui Song, Alessandro Rossini, Maksym Lushpenko, Arnor Solberg: CloudMF: Model-Driven Management of Multi-Cloud Applications. ACM Trans. Internet Techn. 18(2): 16:1&amp;ndash;16:24 (2018)
+ Franck Chauvel, Hui Song, Nicolas Ferry, Franck Fleurey: Evaluating robustness of cloud-based systems.</description>
     </item>
     
   </channel>

@@ -17,8 +17,9 @@
       <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
       
       <guid>https://fchauvel.github.io/software/</guid>
-      <description>I basically like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. Below are the application that I developed:
- MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.g., queues, AQM, auto-scaling, timeouts, back-off, &amp;hellip;). MAD runs discrete events simulation and estimates performances including reliability, availability and response time to name a few.</description>
+      <description>I like building software and I am lucky enough to get the opportunity to develop open source tools as part of my job. Below are some I have contributed to:
+ CAMP helps developers amplify integration tests and configuration tests. Given a test sample and variability models CAMP generates, build and execute your tests on many alternatives environments.
+ MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.</description>
     </item>
     
     <item>
