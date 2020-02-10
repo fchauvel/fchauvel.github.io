@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on Franck Chauvel</title>
-    <link>https://fchauvel.github.io/categories/research/</link>
+    <link>//fchauvel.github.io/categories/research/</link>
     <description>Recent content in research on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
     
-	<atom:link href="https://fchauvel.github.io/categories/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//fchauvel.github.io/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Exploring Emergent Auto-Scaling</title>
-      <link>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</link>
+      <link>//fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</link>
       <pubDate>Fri, 10 Mar 2017 12:38:06 +0100</pubDate>
       
-      <guid>https://fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</guid>
+      <guid>//fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/</guid>
       <description>I noted that services tend to become smaller and more intelligent. Microservices for instance now encompass various resiliency mechanisms such as active queue management (AQM), auto-scaling or retry/back-off to name only a few. As services are distributed in nature, I am wondering what behaviour will emerge from interactions of such autonomous (micro-)services.
 While reading &amp;ldquo;Signals and Boundaries&amp;rdquo; (Holland 2012), I wonder about the simplest model that could lead, for instance, to a feature like auto-scaling.</description>
     </item>
     
     <item>
       <title>The Reviews I Wish to Get</title>
-      <link>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</link>
+      <link>//fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</link>
       <pubDate>Wed, 16 Nov 2016 14:49:59 +0100</pubDate>
       
-      <guid>https://fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</guid>
-      <description>As a researcher, I submit research articles for peer-review. The reviews I get are unfortunately too often deceptive&amp;mdash;not only because most are rebuttals. These reviews are of very little use, beyond improving my broken English.
+      <guid>//fchauvel.github.io/2016/11/16/the-reviews-i-wish-to-get/</guid>
+      <description>As a researcher, I submit research articles for peer-review. The reviews I get are unfortunately too often deceptive—not only because most are rebuttals. These reviews are of very little use, beyond improving my broken English.
 Below are the key points I wish reviewers would discuss. As a matter of fact, I do also consider them when I write reviews. While I am aware of the time it takes to write a detailed review, I am convinced that it does help moving research in the right direction.</description>
     </item>
     
     <item>
       <title>Research Activities</title>
-      <link>https://fchauvel.github.io/research/</link>
+      <link>//fchauvel.github.io/research/</link>
       <pubDate>Wed, 17 Aug 2016 14:53:31 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/research/</guid>
+      <guid>//fchauvel.github.io/research/</guid>
       <description>Research Interests I am a software engineer who ended up doing applied research. My interests therefore revolve about programming and software engineering.
- Complex Adaptive Systems fascinates me, especially distributed ones. I observe that as software systems grow in both in size and complexity, they resemble complex adaptive systems, whose behaviour is difficult to understand, let alone to predict.
- Agile Software Development and the software craftsmanship ideas struck me as obvious once we know them.</description>
+  Complex Adaptive Systems fascinates me, especially distributed ones. I observe that as software systems grow in both in size and complexity, they resemble complex adaptive systems, whose behaviour is difficult to understand, let alone to predict.
+  Agile Software Development and the software craftsmanship ideas struck me as obvious once we know them.</description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://fchauvel.github.io/publication-list/</link>
+      <link>//fchauvel.github.io/publication-list/</link>
       <pubDate>Wed, 17 Aug 2016 13:16:39 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/publication-list/</guid>
+      <guid>//fchauvel.github.io/publication-list/</guid>
       <description>According to Google Scholar, I have authored more than 50 publications in international peer-reviewed venues, totalling 1 060 citations with H-index 18. Below is the list of my publications. You may find it as well on DBLP.
-International Journals  Nicolas Ferry, Franck Chauvel, Hui Song, Alessandro Rossini, Maksym Lushpenko, Arnor Solberg: CloudMF: Model-Driven Management of Multi-Cloud Applications. ACM Trans. Internet Techn. 18(2): 16:1&amp;ndash;16:24 (2018)
- Franck Chauvel, Hui Song, Nicolas Ferry, Franck Fleurey: Evaluating robustness of cloud-based systems.</description>
+International Journals   Nicolas Ferry, Franck Chauvel, Hui Song, Alessandro Rossini, Maksym Lushpenko, Arnor Solberg: CloudMF: Model-Driven Management of Multi-Cloud Applications. ACM Trans. Internet Techn. 18(2): 16:1–16:24 (2018)
+  Franck Chauvel, Hui Song, Nicolas Ferry, Franck Fleurey: Evaluating robustness of cloud-based systems.</description>
     </item>
     
   </channel>

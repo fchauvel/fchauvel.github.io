@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sys-admin on Franck Chauvel</title>
-    <link>https://fchauvel.github.io/categories/sys-admin/</link>
+    <link>//fchauvel.github.io/categories/sys-admin/</link>
     <description>Recent content in sys-admin on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Aug 2016 07:38:22 +0200</lastBuildDate>
     
-	<atom:link href="https://fchauvel.github.io/categories/sys-admin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//fchauvel.github.io/categories/sys-admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Automatically Deploy on Gandi?</title>
-      <link>https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</link>
+      <link>//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</link>
       <pubDate>Sun, 28 Aug 2016 07:38:22 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</guid>
+      <guid>//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/</guid>
       <description>I host fchauvel.net (this very website) on Gandi.net. I use Hugo to generate it and I explain below how, each time I update its content, I automatically upload the new website.
 Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from which I have chosen simple hosting. Generally, I use rsync or scp to upload all my content in one go, but Gandi restricts access to either SFTP or GIT.</description>
     </item>

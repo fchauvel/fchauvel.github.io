@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software on Franck Chauvel</title>
-    <link>https://fchauvel.github.io/categories/software/</link>
+    <link>//fchauvel.github.io/categories/software/</link>
     <description>Recent content in software on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Aug 2016 16:54:27 +0200</lastBuildDate>
     
-	<atom:link href="https://fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Software</title>
-      <link>https://fchauvel.github.io/software/</link>
+      <link>//fchauvel.github.io/software/</link>
       <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/software/</guid>
-      <description>I like building software and I am lucky enough to get the opportunity to develop open source tools as part of my job. Below are some I have contributed to:
- CAMP helps developers amplify integration tests and configuration tests. Given a test sample and variability models CAMP generates, build and execute your tests on many alternatives environments.
- MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.</description>
+      <guid>//fchauvel.github.io/software/</guid>
+      <description>I like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. I have been involved in development of the tools including:
+  CAMP helps you amplify your configuration tests. Given your docker resources, CAMP will run your tests in multiple environments, giving you confidence!
+  CloudML helps you deploys your application accross multiple clouds, such as AWS, Azure, etc.</description>
     </item>
     
   </channel>

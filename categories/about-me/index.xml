@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>about-me on Franck Chauvel</title>
-    <link>https://fchauvel.github.io/categories/about-me/</link>
+    <link>//fchauvel.github.io/categories/about-me/</link>
     <description>Recent content in about-me on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Aug 2016 16:54:27 +0200</lastBuildDate>
     
-	<atom:link href="https://fchauvel.github.io/categories/about-me/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//fchauvel.github.io/categories/about-me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Software</title>
-      <link>https://fchauvel.github.io/software/</link>
+      <link>//fchauvel.github.io/software/</link>
       <pubDate>Thu, 18 Aug 2016 16:54:27 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/software/</guid>
-      <description>I like building software and I am lucky enough to get the opportunity to develop open source tools as part of my job. Below are some I have contributed to:
- CAMP helps developers amplify integration tests and configuration tests. Given a test sample and variability models CAMP generates, build and execute your tests on many alternatives environments.
- MAD is a simulator of self-adaptive software architectures. MAD captures the interplay of so-called &amp;lsquo;defencive&amp;rsquo; mechanisms (e.</description>
+      <guid>//fchauvel.github.io/software/</guid>
+      <description>I like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. I have been involved in development of the tools including:
+  CAMP helps you amplify your configuration tests. Given your docker resources, CAMP will run your tests in multiple environments, giving you confidence!
+  CloudML helps you deploys your application accross multiple clouds, such as AWS, Azure, etc.</description>
     </item>
     
     <item>
       <title>Research Activities</title>
-      <link>https://fchauvel.github.io/research/</link>
+      <link>//fchauvel.github.io/research/</link>
       <pubDate>Wed, 17 Aug 2016 14:53:31 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/research/</guid>
+      <guid>//fchauvel.github.io/research/</guid>
       <description>Research Interests I am a software engineer who ended up doing applied research. My interests therefore revolve about programming and software engineering.
- Complex Adaptive Systems fascinates me, especially distributed ones. I observe that as software systems grow in both in size and complexity, they resemble complex adaptive systems, whose behaviour is difficult to understand, let alone to predict.
- Agile Software Development and the software craftsmanship ideas struck me as obvious once we know them.</description>
+  Complex Adaptive Systems fascinates me, especially distributed ones. I observe that as software systems grow in both in size and complexity, they resemble complex adaptive systems, whose behaviour is difficult to understand, let alone to predict.
+  Agile Software Development and the software craftsmanship ideas struck me as obvious once we know them.</description>
     </item>
     
     <item>
       <title>Who is Franck?</title>
-      <link>https://fchauvel.github.io/biography/</link>
+      <link>//fchauvel.github.io/biography/</link>
       <pubDate>Wed, 17 Aug 2016 13:29:59 +0200</pubDate>
       
-      <guid>https://fchauvel.github.io/biography/</guid>
+      <guid>//fchauvel.github.io/biography/</guid>
       <description>It is me, the guy who publish this website.
 What am I looking for? I am a programmer researching for better ways to design and implement self-adaptive systems, that is systems that automatically adjust to their environment. I am looking for opportunities to evaluate research ideas in industrial settings, especially around Cloud technologies.
 My current objective is to detect, at design-time, performances issues due to interactions between feedback loops, using simulation of architectural models.</description>
