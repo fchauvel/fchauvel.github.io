@@ -27,7 +27,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="//fchauvel.github.io/" />
-<meta property="og:updated_time" content="2017-03-10T12:38:06+01:00" />
+<meta property="og:updated_time" content="2020-02-05T15:57:00+02:00" />
 
     
     <meta itemprop="name" content="Franck Chauvel">
@@ -181,12 +181,12 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        4
+        5
         <span>Posts</span>
       </div>
       <div class="article-info-block">
         
-          8
+          11
         
         <span>
             Tags
@@ -268,6 +268,164 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        <a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/" itemprop="url">
+            <img src="//fchauvel.github.io/images/code.jpg" class="article-banner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/">
+    <h1 class="article-title" itemprop="name">
+        Introducing Quick-check
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2020-02-05 15:57:00 &#43;0200 &#43;0200" itemprop="datePublished">2020-02-05</time>
+            &middot;
+            303
+            words
+            &middot;
+            2
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/categories/software">software</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/nodejs">NodeJS</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/code">Code</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/open-source">Open-Source</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                Quick-Check, a JS library to validate and convert JSON object trees
+            </p>
+            <p class="article-more-link">
+                <a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+  <a data-url="//fchauvel.github.io/2020/02/05/introducing-quick-check/"
+     1d19c724b4685f20c4d4ec113953deccdata-id="post/quick_check.md"
+     class="article-share-link">
+    <i class="fa fa-share"></i>
+    Share
+  </a>
+    
+    <a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -907,6 +1065,32 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/" class="thumbnail">
+                    
+                        <span style="background-image:url(//fchauvel.github.io/images/code.jpg)" alt="Franck Chauvel" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="//fchauvel.github.io/categories/software">
+                        software
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="//fchauvel.github.io/2020/02/05/introducing-quick-check/" class="title">Introducing Quick-check</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-02-05 15:57:00 &#43;0200 &#43;0200" itemprop="datePublished">2020-02-05</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2017/03/10/exploring-emergent-auto-scaling/" class="thumbnail">
                     
                         <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Franck Chauvel" class="thumbnail-image"></span>
@@ -1051,7 +1235,7 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/categories/software">
                     software
                 </a>
-                <span class="category-list-count">1</span>
+                <span class="category-list-count">2</span>
             </li>
             
             <li class="category-list-item">
@@ -1081,6 +1265,14 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="//fchauvel.github.io/tags/code">
+                    code
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="//fchauvel.github.io/tags/gandi.net">
                     gandi.net
                 </a>
@@ -1099,6 +1291,22 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 
                 <a class="category-list-link" href="//fchauvel.github.io/tags/microservices">
                     microservices
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="//fchauvel.github.io/tags/nodejs">
+                    nodejs
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="//fchauvel.github.io/tags/open-source">
+                    open-source
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -1160,6 +1368,9 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
     <div class="widget tagcloud">
         
         
+        <a href="//fchauvel.github.io/tags/code" style="font-size: 12px;">code</a>
+        
+        
         <a href="//fchauvel.github.io/tags/gandi.net" style="font-size: 12px;">gandi.net</a>
         
         
@@ -1167,6 +1378,12 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
         
         
         <a href="//fchauvel.github.io/tags/microservices" style="font-size: 12px;">microservices</a>
+        
+        
+        <a href="//fchauvel.github.io/tags/nodejs" style="font-size: 12px;">nodejs</a>
+        
+        
+        <a href="//fchauvel.github.io/tags/open-source" style="font-size: 12px;">open-source</a>
         
         
         <a href="//fchauvel.github.io/tags/python" style="font-size: 12px;">python</a>

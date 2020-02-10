@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 15:57:00 +0200</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introducing Quick-check</title>
+      <link>//fchauvel.github.io/2020/02/05/introducing-quick-check/</link>
+      <pubDate>Wed, 05 Feb 2020 15:57:00 +0200</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/02/05/introducing-quick-check/</guid>
+      <description>I recently released quick-check, a JS library to easily declare data schema and validate and convert data accordinly.
+Why Yet Another Library? I did not find anything that fits my need. I ended up writing some boiler-plate code, code to convert object trees (i.e., maps and lists) into home-grown classes, first while working on the CAMP project (Python), and then on my RPP project.
+I did find though libraries to convert JSON files into home-grown classes, using annotations for instance, but in my case, I needed to accept both objects trees from multiple syntax files, say TOML and YAML for instance, which I parsed using different libraries.</description>
+    </item>
     
     <item>
       <title>Exploring Emergent Auto-Scaling</title>

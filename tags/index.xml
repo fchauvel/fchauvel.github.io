@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Mar 2017 12:38:06 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Feb 2020 15:57:00 +0200</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code</title>
+      <link>//fchauvel.github.io/tags/code/</link>
+      <pubDate>Wed, 05 Feb 2020 15:57:00 +0200</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NodeJS</title>
+      <link>//fchauvel.github.io/tags/nodejs/</link>
+      <pubDate>Wed, 05 Feb 2020 15:57:00 +0200</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open-Source</title>
+      <link>//fchauvel.github.io/tags/open-source/</link>
+      <pubDate>Wed, 05 Feb 2020 15:57:00 +0200</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>microservices</title>
