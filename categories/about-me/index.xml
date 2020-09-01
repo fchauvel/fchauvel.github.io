@@ -34,14 +34,13 @@
     </item>
     
     <item>
-      <title>Who is Franck?</title>
+      <title>Biography</title>
       <link>//fchauvel.github.io/biography/</link>
       <pubDate>Wed, 17 Aug 2016 13:29:59 +0200</pubDate>
       
       <guid>//fchauvel.github.io/biography/</guid>
-      <description>It is me, the guy who publish this website.
-What am I looking for? I am a programmer researching for better ways to design and implement self-adaptive systems, that is systems that automatically adjust to their environment. I am looking for opportunities to evaluate research ideas in industrial settings, especially around Cloud technologies.
-My current objective is to detect, at design-time, performances issues due to interactions between feedback loops, using simulation of architectural models.</description>
+      <description>Hi, I&amp;rsquo;m Franck! Enthusiasm and curiosity have turned me into a &amp;ldquo;Swiss knife&amp;rdquo;. Not only do I design, manage and sell research &amp;amp; innovation projects in Software Engineering, but I still write code!
+What am I looking for? I am a programmer researching for better ways to design and implement self-adaptive systems, that is systems that automatically adjust to their environment. I am looking for opportunities to evaluate research ideas in industrial settings, especially around Cloud technologies.</description>
     </item>
     
   </channel>

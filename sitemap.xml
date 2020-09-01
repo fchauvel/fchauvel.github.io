@@ -3,17 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//fchauvel.github.io/categories/</loc>
-    <lastmod>2020-02-05T15:57:00+02:00</lastmod>
+    <loc>//fchauvel.github.io/tags/biographies/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>//fchauvel.github.io/tags/code/</loc>
-    <lastmod>2020-02-05T15:57:00+02:00</lastmod>
+    <loc>//fchauvel.github.io/tags/book/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/categories/book-review/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/categories/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>//fchauvel.github.io/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/post/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/tags/review/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/tags/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/2020/09/01/the-life-of-benjamin-franklin-by-m.-l.-weems/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/2020/08/21/how-i-raised-myself-from-failure-to-success-in-selling-by-f.-bettger/</loc>
+    <lastmod>2020-08-21T07:38:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/tags/self-help/</loc>
+    <lastmod>2020-08-21T07:38:22+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//fchauvel.github.io/tags/code/</loc>
     <lastmod>2020-02-05T15:57:00+02:00</lastmod>
   </url>
   
@@ -33,17 +78,7 @@
   </url>
   
   <url>
-    <loc>//fchauvel.github.io/post/</loc>
-    <lastmod>2020-02-05T15:57:00+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>//fchauvel.github.io/categories/software/</loc>
-    <lastmod>2020-02-05T15:57:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//fchauvel.github.io/tags/</loc>
     <lastmod>2020-02-05T15:57:00+02:00</lastmod>
   </url>
   
@@ -79,11 +114,6 @@
   
   <url>
     <loc>//fchauvel.github.io/tags/research/</loc>
-    <lastmod>2016-11-16T14:49:59+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>//fchauvel.github.io/tags/review/</loc>
     <lastmod>2016-11-16T14:49:59+01:00</lastmod>
   </url>
   
