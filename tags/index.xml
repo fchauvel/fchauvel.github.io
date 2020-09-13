@@ -6,24 +6,15 @@
     <description>Recent content in Tags on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>biographies</title>
-      <link>//fchauvel.github.io/tags/biographies/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//fchauvel.github.io/tags/biographies/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>book</title>
       <link>//fchauvel.github.io/tags/book/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/book/</guid>
       <description></description>
@@ -32,7 +23,7 @@
     <item>
       <title>review</title>
       <link>//fchauvel.github.io/tags/review/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/review/</guid>
       <description></description>
@@ -41,9 +32,18 @@
     <item>
       <title>self-help</title>
       <link>//fchauvel.github.io/tags/self-help/</link>
-      <pubDate>Fri, 21 Aug 2020 07:38:22 +0200</pubDate>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/self-help/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>biographies</title>
+      <link>//fchauvel.github.io/tags/biographies/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/biographies/</guid>
       <description></description>
     </item>
     
