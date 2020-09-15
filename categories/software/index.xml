@@ -29,6 +29,7 @@ I did find though libraries to convert JSON files into home-grown classes, using
       
       <guid>//fchauvel.github.io/software/</guid>
       <description>I like coding and I am lucky enough to get the opportunity to develop open source software as part of my job. I have been involved in development of the tools including:
+  GeneSIS helps you deploy and monitor complex smart IoT systems.
   CAMP helps you amplify your configuration tests. Given your docker resources, CAMP will run your tests in multiple environments, giving you confidence!
   CloudML helps you deploys your application accross multiple clouds, such as AWS, Azure, etc.</description>
     </item>
