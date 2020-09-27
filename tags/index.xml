@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,18 +14,36 @@
     <item>
       <title>book</title>
       <link>//fchauvel.github.io/tags/book/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/book/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>design</title>
+      <link>//fchauvel.github.io/tags/design/</link>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>review</title>
       <link>//fchauvel.github.io/tags/review/</link>
-      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>//fchauvel.github.io/tags/software/</link>
+      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/software/</guid>
       <description></description>
     </item>
     
