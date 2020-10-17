@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>data on Franck Chauvel</title>
+    <link>//fchauvel.github.io/tags/data/</link>
+    <description>Recent content in data on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//fchauvel.github.io/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Designing Data-intensive Applications</title>
+      <link>//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/</guid>
+      <description>Are you lost in the jungle of (big-)data technologies? Are you wondering how the Flink, Spark, Hive, Pig, Airflow and the likes fit together? Then this is the right book!
+I found it as a recommendation on Goodreads.com. I wanted to learn about data technologies as I work more and more on this and I felt it was a good match: It was recent enough (2017), and was available on Google Play within my budget (EUR 12).</description>
+    </item>
+    
+  </channel>
+</rss>
