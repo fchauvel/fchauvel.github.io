@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to take smart notes, by S. Ahrens</title>
+      <link>//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/</link>
+      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/</guid>
+      <description>Do you feel that you never have any idea or that your ideas are irrelevant or impractial? This book tells how to generate ideas by reading and taking notes!
+Yet another book that Goodreads.com recommended. I always felt my notes taking is inadequate: In meetings, I often note only the irrelevant. But this is not about writing meeting minutes. It is about taking generating ideas by taking notes while reading—as the subtitle says.</description>
+    </item>
     
     <item>
       <title>Designing Data-intensive Applications</title>
