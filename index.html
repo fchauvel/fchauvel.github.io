@@ -27,7 +27,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="//fchauvel.github.io/" />
-<meta property="og:updated_time" content="2020-10-24T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-11-01T00:00:00+00:00" />
 
     
     <meta itemprop="name" content="Franck Chauvel">
@@ -181,7 +181,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        11
+        12
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -272,6 +272,173 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" itemprop="url">
+            <img src="//fchauvel.github.io/images/books.jpg" class="article-banner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/">
+    <h1 class="article-title" itemprop="name">
+        Clean Architecture, by R. Martin
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-11-01</time>
+            &middot;
+            421
+            words
+            &middot;
+            2
+            minute read
+        </div>
+        
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-folder"></i>
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/categories/book-review">book-review</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/categories/software">software</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/categories/design">design</a>
+                
+                
+            </div>
+            
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/book">book</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/review">review</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/tags/software">software</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
+I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!
+            </p>
+            <p class="article-more-link">
+                <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+  <a data-url="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/"
+     fac0a872176a59948e04602d47c371f3data-id="post\2020_11_01_clean_archiecture.md"
+     class="article-share-link">
+    <i class="fa fa-share"></i>
+    Share
+  </a>
+    
+    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/#disqus_thread" class="article-comment-link">
+        Comments
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -1735,157 +1902,6 @@
     </div>
 </article>
 
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        <a href="//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/" itemprop="url">
-            <img src="//fchauvel.github.io/images/code.jpg" class="article-banner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/">
-    <h1 class="article-title" itemprop="name">
-        How to Automatically Deploy on Gandi?
-    </h1>
-    </a>
-    <div class="article-meta">
-
-        
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-08-28 07:38:22 &#43;0200 CEST" itemprop="datePublished">2016-08-28</time>
-            &middot;
-            815
-            words
-            &middot;
-            4
-            minute read
-        </div>
-        
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                
-                <a class="article-category-link" href="//fchauvel.github.io/categories/sys-admin">sys-admin</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                
-                <a class="article-category-link" href="//fchauvel.github.io/tags/gandi.net">gandi.net</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                I host fchauvel.net (this very website) on Gandi.net. I use Hugo to generate it and I explain below how, each time I update its content, I automatically upload the new website.
-Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from which I have chosen simple hosting. Generally, I use rsync or scp to upload all my content in one go, but Gandi restricts access to either SFTP or GIT.
-            </p>
-            <p class="article-more-link">
-                <a href="//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/">
-                    Read more
-                </a>
-            </p>
-        </div>
-        <footer class="article-footer">
-  <a data-url="//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/"
-     20705d53ab2e8b923ca90bed19b61f49data-id="post\deploy_on_gandi.md"
-     class="article-share-link">
-    <i class="fa fa-share"></i>
-    Share
-  </a>
-    
-    <a href="//fchauvel.github.io/2016/08/28/how-to-automatically-deploy-on-gandi/#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-    </div>
-</article>
-
 
 <nav id="page-nav">
 
@@ -1911,6 +1927,32 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
     </h3>
     <div class="widget">
         <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" class="thumbnail">
+                    
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Franck Chauvel" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    <p class="item-category">
+                        
+                        <a class="article-category-link" href="//fchauvel.github.io/categories/book-review">
+                        book-review
+                        </a>
+                    </p>
+                    
+                    
+                    <p class="item-title"><a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" class="title">Clean Architecture, by R. Martin</a></p>
+                    <p class="item-date">
+                        <time datetime="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-11-01</time>
+                    </p>
+                </div>
+            </li>
             
             <li>
                 <div class="item-thumbnail">
@@ -2016,32 +2058,6 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 </div>
             </li>
             
-            <li>
-                <div class="item-thumbnail">
-                    <a href="//fchauvel.github.io/2020/09/01/the-life-of-benjamin-franklin-by-m.-l.-weems/" class="thumbnail">
-                    
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Franck Chauvel" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="//fchauvel.github.io/categories/book-review">
-                        book-review
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="//fchauvel.github.io/2020/09/01/the-life-of-benjamin-franklin-by-m.-l.-weems/" class="title">The Life of Benjamin Franklin by M. L. Weems</a></p>
-                    <p class="item-date">
-                        <time datetime="2020-09-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-09-01</time>
-                    </p>
-                </div>
-            </li>
-            
         </ul>
     </div>
 </div>
@@ -2068,7 +2084,15 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/categories/book-review">
                     book-review
                 </a>
-                <span class="category-list-count">6</span>
+                <span class="category-list-count">7</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="//fchauvel.github.io/categories/design">
+                    design
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -2100,7 +2124,7 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/categories/software">
                     software
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">5</span>
             </li>
             
             <li class="category-list-item">
@@ -2149,7 +2173,7 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/tags/book">
                     book
                 </a>
-                <span class="category-list-count">6</span>
+                <span class="category-list-count">7</span>
             </li>
             
             <li class="category-list-item">
@@ -2253,7 +2277,7 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/tags/review">
                     review
                 </a>
-                <span class="category-list-count">7</span>
+                <span class="category-list-count">8</span>
             </li>
             
             <li class="category-list-item">
@@ -2285,7 +2309,7 @@ Upload to Gandi.net using LFTP Gandi offers several hosting solutions, from whic
                 <a class="category-list-link" href="//fchauvel.github.io/tags/software">
                     software
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
         </ul>

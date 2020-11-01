@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Designing Data-intensive Applications &middot; Franck Chauvel</title>
+    <title>Clean Architecture, by R. Martin &middot; Franck Chauvel</title>
     <meta name="generator" content="Hugo 0.64.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Franck Chauvel">
     
-      <meta name="description" content="Are you lost in the jungle of (big-)data technologies?  Are you wondering how the Flink, Spark, Hive, Pig, Airflow and the likes fit together? Then this is could be of help!">
+      <meta name="description" content="Franck&#39;s Personal Page">
     
     
-    <link rel="canonical" href="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/"/>
+    <link rel="canonical" href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/"/>
     <link rel="icon" href="//fchauvel.github.io/favicon.ico">
     <link rel="apple-touch-icon" href="//fchauvel.github.io/apple-touch-icon.png"/>
     <link rel="stylesheet" href="//fchauvel.github.io/css/style.css">
@@ -20,26 +20,29 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Designing Data-intensive Applications" />
-<meta property="og:description" content="Are you lost in the jungle of (big-)data technologies?  Are you wondering how the Flink, Spark, Hive, Pig, Airflow and the likes fit together? Then this is could be of help!" />
+    <meta property="og:title" content="Clean Architecture, by R. Martin" />
+<meta property="og:description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
+I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/" />
-<meta property="article:published_time" content="2020-10-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-10-17T00:00:00+00:00" />
+<meta property="og:url" content="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" />
+<meta property="article:published_time" content="2020-11-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-01T00:00:00+00:00" />
 
     
-    <meta itemprop="name" content="Designing Data-intensive Applications">
-<meta itemprop="description" content="Are you lost in the jungle of (big-)data technologies?  Are you wondering how the Flink, Spark, Hive, Pig, Airflow and the likes fit together? Then this is could be of help!">
-<meta itemprop="datePublished" content="2020-10-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-10-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="334">
+    <meta itemprop="name" content="Clean Architecture, by R. Martin">
+<meta itemprop="description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
+I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!">
+<meta itemprop="datePublished" content="2020-11-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-11-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="421">
 
 
 
-<meta itemprop="keywords" content="book,review,software,architecture,data," />
+<meta itemprop="keywords" content="book,review,software," />
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Designing Data-intensive Applications"/>
-<meta name="twitter:description" content="Are you lost in the jungle of (big-)data technologies?  Are you wondering how the Flink, Spark, Hive, Pig, Airflow and the likes fit together? Then this is could be of help!"/>
+<meta name="twitter:title" content="Clean Architecture, by R. Martin"/>
+<meta name="twitter:description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
+I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!"/>
 <meta name="twitter:site" content="@fchauvel1"/>
 
     
@@ -283,9 +286,9 @@
         
 
         <header class="article-header">
-    <a href="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/">
+    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/">
     <h1 class="article-title" itemprop="name">
-        Designing Data-intensive Applications
+        Clean Architecture, by R. Martin
     </h1>
     </a>
     <div class="article-meta">
@@ -293,9 +296,9 @@
         
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2020-10-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-10-17</time>
+            <time datetime="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-11-01</time>
             &middot;
-            334
+            421
             words
             &middot;
             2
@@ -314,6 +317,10 @@
                 
                 
                 <a class="article-category-link" href="//fchauvel.github.io/categories/software">software</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="//fchauvel.github.io/categories/design">design</a>
                 
                 
             </div>
@@ -336,14 +343,6 @@
                 
                 
                 <a class="article-category-link" href="//fchauvel.github.io/tags/software">software</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="//fchauvel.github.io/tags/architecture">architecture</a>
-                &middot;
-                
-                
-                <a class="article-category-link" href="//fchauvel.github.io/tags/data">data</a>
                 
                 
             </div>
@@ -354,59 +353,76 @@
 
         <div class="article-entry" itemprop="articleBody">
             <!-- raw HTML omitted -->
-<p>Are you lost in the jungle of (big-)data technologies?  Are you wondering
-how the Flink, Spark, Hive, Pig, Airflow and the likes fit together?
-Then this is the right book!</p>
-<p><img src="/images/books/designing_data-intensive_applications.jpg" alt="Bookcover"></p>
+<p>Does software architecture sound like a vague philosophical idea,
+disconnected from the practicalities of programming? Yes? This might
+be a good read.</p>
+<p><img src="/images/books/clean_architecture.jpg" alt="Bookcover"></p>
 <!-- raw HTML omitted -->
-<p>I found it as a recommendation on
-<a href="http://goodreads.com">Goodreads.com</a>. I wanted to learn about data
-technologies as I work more and more on this and I felt it was a good
-match: It was recent enough (2017), and was available on <a href="https://play.google.com/store/books/details/Martin_Kleppmann_Designing_Data_Intensive_Applicat?id=p1heDgAAQBAJ">Google
-Play</a>
-within my budget (EUR 12).</p>
 <!-- raw HTML omitted -->
-<p>In 616 pages, it covers a lot of ground, through three parts. Part I
-lays some foundations: It defines reliability, scalability,
-maintainability, data models, query languages and storage
-engines. Part II explores data distribution and covers replication,
-partitioning/sharding, transaction, consistency and consensus. Part
-III focuses on data processing and discuss batch processing and stream
-processing.</p>
+<p>I liked <a href="https://www.goodreads.com/book/show/3735293-clean-code">Clean
+Code</a> and <a href="https://www.goodreads.com/book/show/10284614-the-clean-coder">The
+Clean
+Coder</a>
+by R. Martin, I felt tempted to read this other volume about software
+architecture. While I had been hesitating for some time, reading <a href="https://www.goodreads.com/book/show/9005772-just-enough-software-architecture">just
+enough software
+architecture</a>
+by G. Fairbanks revamped my interest, and I took the (tiny)
+plunge. Besides, I got to try the Amazon Kindle for the first time, and
+I liked it!. The book still costs <a href="https://www.amazon.co.uk/Clean-Architecture-Craftsmans-Software-Structure-ebook-dp-B075LRM681/dp/B075LRM681/">15 EUR on
+Amazon</a>
+though.</p>
 <!-- raw HTML omitted -->
-<p><a href="http://martin.kleppmann.com/">Martin Kleppmann</a> is a researcher at
-Cambridge University, who <a href="https://dblp.org/pid/148/2880.html">focuses on
-data</a>. He has also
-been an entrepreneur and speaks at conferences regularly.</p>
+<p>R. Martin details his &ldquo;Clean Architecture&rdquo; in six parts. After an
+introduction in Part I, he explains in Part II why the rules of
+software architecture are unlikely to change before he reiterates his
+SOLID principles in Part III. From there, he &ldquo;zooms out&rdquo; and discusses
+how these SOLID principles apply to larger software entities, namely
+components in Part IV and architecture in Part V. In Part VI, he lists
+details such as GUI, storage or frameworks that can hurt the
+architecture. The curious will find in Part VII a selection of war
+stories from Robert&rsquo;s career that shaped this &ldquo;clean architecture&rdquo;.</p>
 <!-- raw HTML omitted -->
-<p>I enjoyed the read: Despite a very technical subject, I liked the way
-Martin explains complicated issues with simple diagrams and intuitive
-ideas. No greek symbols, no pedantic sentences. Yet, the book is full
-of pointers to both research articles, blog posts for those who would
-like to dig deeper. Each chapter starts with a map—you know,
-those maps of imaginary worlds we found in fantasy books or
-role-playing games. Here, those maps relate all the data concepts and
-technologies and taught me a lot! I saw connections I had never
-thought of. Overall, I feel I learned a lot, and at the end, Martin
-discusses ethical issues with data and machine-learning that made me
-think—I am still thinking.</p>
+<p><a href="https://en.wikipedia.org/wiki/Robert_C._Martin">Robert Cecil Martin</a>
+is one of the louder voices in Software Engineering. He has authored
+books and magazine articles on programming, agile practices, and was
+one of the founders of the Agile manifesto.</p>
 <!-- raw HTML omitted -->
-<p>I give it four stars! I definitely recommend it to those who want
-to enter the world of data-intensive systems. I am also convinced that
-the sheer number of pointers makes it an interesting reference for
-experts!  Next, we have to choose a specific technology to dive
-deeper. Martin gave us the map, we just have to follow our interest!</p>
+<p>As for the style, I found Robert&rsquo;s voice peremptory, and I am not so
+much into war stories from the 60ies. Robert argues convincingly and
+mainly refers to relevant books and articles, but I don&rsquo;t remember
+empirical about others using his clean architecture.</p>
+<p>As for the substance, this is more technical than other books on
+software architecture. It is about classes, modules, components,
+releases, etc. I felt Part II and III add little if, like me, you
+already went through <a href="https://www.goodreads.com/book/show/3735293-clean-code">Clean
+Code</a> and <a href="https://www.goodreads.com/book/show/10284614-the-clean-coder">The
+Clean
+Coder</a>. But
+I like the rest. The clean architecture departs from &ldquo;testing from the
+very outset&rdquo;, which ensures the user always has something to play with
+(see <a href="https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests">Growing-object oriented system guided by
+tests</a>). Robert
+trades this against tests that better withstand changes over time,
+since they don&rsquo;t hit volatile things like the UI or the storage,
+etc. It&rsquo;s a tradeoff.</p>
+<!-- raw HTML omitted -->
+<p>Eventually, I liked it and gave it 3 stars. I would recommend it to
+those that see software architecture as a pure (useless?) academic
+exercise. Robert&rsquo;s clean architecture is one practical way to bridge
+the model-code gap, that is, to have an architecture that exists beyond
+whiteboards.</p>
 
         </div>
         <footer class="article-footer">
-  <a data-url="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/"
-     8e1c33db0de9dd9b6b37ba3669422635data-id="post\2020_10_17_designing_data_intensive_applications.md"
+  <a data-url="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/"
+     fac0a872176a59948e04602d47c371f3data-id="post\2020_11_01_clean_archiecture.md"
      class="article-share-link">
     <i class="fa fa-share"></i>
     Share
   </a>
     
-    <a href="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/#disqus_thread" class="article-comment-link">
+    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/#disqus_thread" class="article-comment-link">
         Comments
     </a>
     
@@ -482,21 +498,14 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
     
 <nav id="article-nav">
     
-    <a href="//fchauvel.github.io/2020/09/26/just-enough-software-architecture/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
-      <div class="article-nav-title">Just Enough Software Architecture</div>
+      <div class="article-nav-title">How to take smart notes, by S. Ahrens</div>
     </a>
     
 
-    
-    <a href="//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Newer
-      </strong>
-      <div class="article-nav-title">How to take smart notes, by S. Ahrens</div>
-    </a>
     
 </nav>
 
@@ -546,7 +555,7 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Designing Data-intensive Applications" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -572,7 +581,7 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Designing Data-intensive Applications" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -598,7 +607,7 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Designing Data-intensive Applications" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -624,7 +633,7 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/09/26/just-enough-software-architecture/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Designing Data-intensive Applications" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -650,7 +659,7 @@ deeper. Martin gave us the map, we just have to follow our interest!</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/09/11/how-to-win-friends-and-influence-people-by-d.-carnegie/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Designing Data-intensive Applications" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
                     
                     </a>
                 </div>

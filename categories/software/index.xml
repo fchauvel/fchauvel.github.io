@@ -6,10 +6,20 @@
     <description>Recent content in software on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Clean Architecture, by R. Martin</title>
+      <link>//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/</guid>
+      <description>Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
+I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!</description>
+    </item>
     
     <item>
       <title>Designing Data-intensive Applications</title>

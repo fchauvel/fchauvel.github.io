@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>book</title>
       <link>//fchauvel.github.io/tags/book/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>//fchauvel.github.io/tags/review/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>//fchauvel.github.io/tags/software/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/tags/software/</guid>
       <description></description>
     </item>
     
@@ -48,15 +66,6 @@
     </item>
     
     <item>
-      <title>review</title>
-      <link>//fchauvel.github.io/tags/review/</link>
-      <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//fchauvel.github.io/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>architecture</title>
       <link>//fchauvel.github.io/tags/architecture/</link>
       <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
@@ -71,15 +80,6 @@
       <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/tags/data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>//fchauvel.github.io/tags/software/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//fchauvel.github.io/tags/software/</guid>
       <description></description>
     </item>
     
