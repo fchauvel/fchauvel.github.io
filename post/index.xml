@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Software Architecture in Practice, by L. Bass et al (3rd Ed.)</title>
+      <link>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass-et-al-3rd-ed./</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass-et-al-3rd-ed./</guid>
+      <description>Why should you read about Software architecture? Who even cares in these Agile and DevOps times. Should you, for whatever reason, still be interested, this book is a good place to approach software architecture from its theory side.
+Here comes a book I had on my reading list for decades: Software Architecture in Practice, by L. Bass, P. Clements, and R. Kazman. I should have read this one when I was a PhD student, but I guess I was too lazy by then.</description>
+    </item>
     
     <item>
       <title>Clean Architecture, by R. Martin</title>
