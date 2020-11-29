@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>book-review</title>
       <link>//fchauvel.github.io/categories/book-review/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/categories/book-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>requirements</title>
+      <link>//fchauvel.github.io/categories/requirements/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/categories/requirements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>//fchauvel.github.io/categories/software/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/categories/software/</guid>
       <description></description>
     </item>
     
@@ -26,15 +44,6 @@
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>//fchauvel.github.io/categories/design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>//fchauvel.github.io/categories/software/</link>
-      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>//fchauvel.github.io/categories/software/</guid>
       <description></description>
     </item>
     

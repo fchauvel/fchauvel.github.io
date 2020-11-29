@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Clean Architecture, by R. Martin &middot; Franck Chauvel</title>
+    <title>Writing Effective Use-cases, by A. Cookburn &middot; Franck Chauvel</title>
     <meta name="generator" content="Hugo 0.64.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,7 +10,7 @@
       <meta name="description" content="Franck&#39;s Personal Page">
     
     
-    <link rel="canonical" href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/"/>
+    <link rel="canonical" href="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/"/>
     <link rel="icon" href="//fchauvel.github.io/favicon.ico">
     <link rel="apple-touch-icon" href="//fchauvel.github.io/apple-touch-icon.png"/>
     <link rel="stylesheet" href="//fchauvel.github.io/css/style.css">
@@ -20,29 +20,29 @@
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Clean Architecture, by R. Martin" />
-<meta property="og:description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
-I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!" />
+    <meta property="og:title" content="Writing Effective Use-cases, by A. Cookburn" />
+<meta property="og:description" content="Use cases? Uh &hellip; isn&rsquo;t it one of those UML diagrams with stickmen, boxes, and bubbles? There is more to it, and &ldquo;Writing Effective Use-cases&rdquo; by A. Cockburn is the place to start.
+I am always unsure about how much requirement I need, especially when building prototypes? So, reading about use-cases, I came across it on M. Fowler&rsquo;s post on his &ldquo;Use Cases&rdquo;. It still costs about 30 EUR on Amazon, but I went for it anyway." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" />
-<meta property="article:published_time" content="2020-11-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-11-01T00:00:00+00:00" />
+<meta property="og:url" content="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/" />
+<meta property="article:published_time" content="2020-11-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-29T00:00:00+00:00" />
 
     
-    <meta itemprop="name" content="Clean Architecture, by R. Martin">
-<meta itemprop="description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
-I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!">
-<meta itemprop="datePublished" content="2020-11-01T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-11-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="421">
+    <meta itemprop="name" content="Writing Effective Use-cases, by A. Cookburn">
+<meta itemprop="description" content="Use cases? Uh &hellip; isn&rsquo;t it one of those UML diagrams with stickmen, boxes, and bubbles? There is more to it, and &ldquo;Writing Effective Use-cases&rdquo; by A. Cockburn is the place to start.
+I am always unsure about how much requirement I need, especially when building prototypes? So, reading about use-cases, I came across it on M. Fowler&rsquo;s post on his &ldquo;Use Cases&rdquo;. It still costs about 30 EUR on Amazon, but I went for it anyway.">
+<meta itemprop="datePublished" content="2020-11-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-11-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="281">
 
 
 
 <meta itemprop="keywords" content="book,review,software," />
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Clean Architecture, by R. Martin"/>
-<meta name="twitter:description" content="Does software architecture sound like a vague philosophical idea, disconnected from the practicalities of programming? Yes? This might be a good read.
-I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this other volume about software architecture. While I had been hesitating for some time, reading just enough software architecture by G. Fairbanks revamped my interest, and I took the (tiny) plunge. Besides, I got to try the Amazon Kindle for the first time, and I liked it!"/>
+<meta name="twitter:title" content="Writing Effective Use-cases, by A. Cookburn"/>
+<meta name="twitter:description" content="Use cases? Uh &hellip; isn&rsquo;t it one of those UML diagrams with stickmen, boxes, and bubbles? There is more to it, and &ldquo;Writing Effective Use-cases&rdquo; by A. Cockburn is the place to start.
+I am always unsure about how much requirement I need, especially when building prototypes? So, reading about use-cases, I came across it on M. Fowler&rsquo;s post on his &ldquo;Use Cases&rdquo;. It still costs about 30 EUR on Amazon, but I went for it anyway."/>
 <meta name="twitter:site" content="@fchauvel1"/>
 
     
@@ -286,9 +286,9 @@ I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this
         
 
         <header class="article-header">
-    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/">
+    <a href="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/">
     <h1 class="article-title" itemprop="name">
-        Clean Architecture, by R. Martin
+        Writing Effective Use-cases, by A. Cookburn
     </h1>
     </a>
     <div class="article-meta">
@@ -296,9 +296,9 @@ I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this
         
         <div class="article-date">
             <i class="fa fa-calendar"></i>
-            <time datetime="2020-11-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-11-01</time>
+            <time datetime="2020-11-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">2020-11-29</time>
             &middot;
-            421
+            281
             words
             &middot;
             2
@@ -320,7 +320,7 @@ I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this
                 &middot;
                 
                 
-                <a class="article-category-link" href="//fchauvel.github.io/categories/design">design</a>
+                <a class="article-category-link" href="//fchauvel.github.io/categories/requirements">requirements</a>
                 
                 
             </div>
@@ -353,76 +353,56 @@ I liked Clean Code and The Clean Coder by R. Martin, I felt tempted to read this
 
         <div class="article-entry" itemprop="articleBody">
             <!-- raw HTML omitted -->
-<p>Does software architecture sound like a vague philosophical idea,
-disconnected from the practicalities of programming? Yes? This might
-be a good read.</p>
-<p><img src="/images/books/clean_architecture.jpg" alt="Bookcover"></p>
+<p>Use cases? Uh &hellip; isn&rsquo;t it one of those UML diagrams with stickmen,
+boxes, and bubbles? There is more to it, and &ldquo;Writing Effective
+Use-cases&rdquo; by A. Cockburn is the place to start.</p>
+<p><img src="/images/books/writing_effective_use_cases.jpg" alt="Bookcover"></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<p>I liked <a href="https://www.goodreads.com/book/show/3735293-clean-code">Clean
-Code</a> and <a href="https://www.goodreads.com/book/show/10284614-the-clean-coder">The
-Clean
-Coder</a>
-by R. Martin, I felt tempted to read this other volume about software
-architecture. While I had been hesitating for some time, reading <a href="https://www.goodreads.com/book/show/9005772-just-enough-software-architecture">just
-enough software
-architecture</a>
-by G. Fairbanks revamped my interest, and I took the (tiny)
-plunge. Besides, I got to try the Amazon Kindle for the first time, and
-I liked it!. The book still costs <a href="https://www.amazon.co.uk/Clean-Architecture-Craftsmans-Software-Structure-ebook-dp-B075LRM681/dp/B075LRM681/">15 EUR on
-Amazon</a>
-though.</p>
+<p>I am always unsure about how much requirement I need, especially when
+building prototypes? So, reading about use-cases, I came across it on
+<a href="https://martinfowler.com/bliki/UseCase.html">M. Fowler&rsquo;s post on his &ldquo;Use
+Cases&rdquo;</a>. It still costs
+about <a href="https://www.amazon.com/Writing-Effective-Cases-Alistair-Cockburn/dp/0201702258">30 EUR on
+Amazon</a>,
+but I went for it anyway. Several years ago, I had read <a href="https://www.goodreads.com/book/show/18350357-software-requirements-3">Software
+Requirements by
+K. Wiegers</a>,
+I felt I needed a refresher.</p>
 <!-- raw HTML omitted -->
-<p>R. Martin details his &ldquo;Clean Architecture&rdquo; in six parts. After an
-introduction in Part I, he explains in Part II why the rules of
-software architecture are unlikely to change before he reiterates his
-SOLID principles in Part III. From there, he &ldquo;zooms out&rdquo; and discusses
-how these SOLID principles apply to larger software entities, namely
-components in Part IV and architecture in Part V. In Part VI, he lists
-details such as GUI, storage or frameworks that can hurt the
-architecture. The curious will find in Part VII a selection of war
-stories from Robert&rsquo;s career that shaped this &ldquo;clean architecture&rdquo;.</p>
+<p>Here come 300 pages on use-cases only. Part I details the various
+sections they include, whereas Part II discusses frequently asked
+questions. Part III concludes with a list of &ldquo;reminders for the
+busy&rdquo;. UML diagrams only show up in appendix.</p>
 <!-- raw HTML omitted -->
-<p><a href="https://en.wikipedia.org/wiki/Robert_C._Martin">Robert Cecil Martin</a>
-is one of the louder voices in Software Engineering. He has authored
-books and magazine articles on programming, agile practices, and was
-one of the founders of the Agile manifesto.</p>
+<p><a href="https://en.wikipedia.org/wiki/Alistair_Cockburn">A. Cockburn</a> is
+another contributor to the Agile Manifesto and created the Crystal
+family of agile methodology. He authored several books on both
+use-cases and agile methods.</p>
 <!-- raw HTML omitted -->
-<p>As for the style, I found Robert&rsquo;s voice peremptory, and I am not so
-much into war stories from the 60ies. Robert argues convincingly and
-mainly refers to relevant books and articles, but I don&rsquo;t remember
-empirical about others using his clean architecture.</p>
-<p>As for the substance, this is more technical than other books on
-software architecture. It is about classes, modules, components,
-releases, etc. I felt Part II and III add little if, like me, you
-already went through <a href="https://www.goodreads.com/book/show/3735293-clean-code">Clean
-Code</a> and <a href="https://www.goodreads.com/book/show/10284614-the-clean-coder">The
-Clean
-Coder</a>. But
-I like the rest. The clean architecture departs from &ldquo;testing from the
-very outset&rdquo;, which ensures the user always has something to play with
-(see <a href="https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests">Growing-object oriented system guided by
-tests</a>). Robert
-trades this against tests that better withstand changes over time,
-since they don&rsquo;t hit volatile things like the UI or the storage,
-etc. It&rsquo;s a tradeoff.</p>
+<p>I found this book very practical as it focuses on textual use-cases as
+opposed to graphical views as in UML, for instance. We dive straight
+in with the use case document and its different sections: Scope, main
+scenario, extensions, etc. Alistair helps with the writing style and
+provides two templates for the so-called casual and fully-dressed
+formats. On the downside, I feel the process to collect and refine
+use-cases is somewhat less clear, but I am guessing this goes beyond
+the intended scope.</p>
 <!-- raw HTML omitted -->
-<p>Eventually, I liked it and gave it 3 stars. I would recommend it to
-those that see software architecture as a pure (useless?) academic
-exercise. Robert&rsquo;s clean architecture is one practical way to bridge
-the model-code gap, that is, to have an architecture that exists beyond
-whiteboards.</p>
+<p>I finally give it 3 stars. It is a good and practical book and a
+reference I will definitely keep in mind. On the downside, I still
+do not get how far to go with the requirements.</p>
 
         </div>
         <footer class="article-footer">
-  <a data-url="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/"
-     fac0a872176a59948e04602d47c371f3data-id="post\2020_11_01_clean_archiecture.md"
+  <a data-url="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/"
+     977653781631addf0a36d2a9f369fc5cdata-id="post\2020_11_29_writing_effective_use-cases.md"
      class="article-share-link">
     <i class="fa fa-share"></i>
     Share
   </a>
     
-    <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/#disqus_thread" class="article-comment-link">
+    <a href="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/#disqus_thread" class="article-comment-link">
         Comments
     </a>
     
@@ -498,21 +478,14 @@ whiteboards.</p>
     
 <nav id="article-nav">
     
-    <a href="//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
-      <div class="article-nav-title">How to take smart notes, by S. Ahrens</div>
+      <div class="article-nav-title">Software Architecture in Practice, by L. Bass</div>
     </a>
     
 
-    
-    <a href="//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Newer
-      </strong>
-      <div class="article-nav-title">Software Architecture in Practice, by L. Bass</div>
-    </a>
     
 </nav>
 
@@ -562,7 +535,7 @@ whiteboards.</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Writing Effective Use-cases, by A. Cookburn" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -588,7 +561,7 @@ whiteboards.</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Writing Effective Use-cases, by A. Cookburn" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -614,7 +587,7 @@ whiteboards.</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/11/01/clean-architecture-by-r.-martin/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Writing Effective Use-cases, by A. Cookburn" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -640,7 +613,7 @@ whiteboards.</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/10/24/how-to-take-smart-notes-by-s.-ahrens/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Writing Effective Use-cases, by A. Cookburn" class="thumbnail-image"></span>
                     
                     </a>
                 </div>
@@ -666,7 +639,7 @@ whiteboards.</p>
                 <div class="item-thumbnail">
                     <a href="//fchauvel.github.io/2020/10/17/designing-data-intensive-applications/" class="thumbnail">
                     
-                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Clean Architecture, by R. Martin" class="thumbnail-image"></span>
+                        <span style="background-image:url(//fchauvel.github.io/images/books.jpg)" alt="Writing Effective Use-cases, by A. Cookburn" class="thumbnail-image"></span>
                     
                     </a>
                 </div>

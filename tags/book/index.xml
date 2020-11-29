@@ -6,17 +6,27 @@
     <description>Recent content in book on Franck Chauvel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//fchauvel.github.io/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Software Architecture in Practice, by L. Bass et al (3rd Ed.)</title>
-      <link>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass-et-al-3rd-ed./</link>
+      <title>Writing Effective Use-cases, by A. Cookburn</title>
+      <link>//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/</guid>
+      <description>Use cases? Uh &amp;hellip; isn&amp;rsquo;t it one of those UML diagrams with stickmen, boxes, and bubbles? There is more to it, and &amp;ldquo;Writing Effective Use-cases&amp;rdquo; by A. Cockburn is the place to start.
+I am always unsure about how much requirement I need, especially when building prototypes? So, reading about use-cases, I came across it on M. Fowler&amp;rsquo;s post on his &amp;ldquo;Use Cases&amp;rdquo;. It still costs about 30 EUR on Amazon, but I went for it anyway.</description>
+    </item>
+    
+    <item>
+      <title>Software Architecture in Practice, by L. Bass</title>
+      <link>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass/</link>
       <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass-et-al-3rd-ed./</guid>
+      <guid>//fchauvel.github.io/2020/11/08/software-architecture-in-practice-by-l.-bass/</guid>
       <description>Why should you read about Software architecture? Who even cares in these Agile and DevOps times. Should you, for whatever reason, still be interested, this book is a good place to approach software architecture from its theory side.
 Here comes a book I had on my reading list for decades: Software Architecture in Practice, by L. Bass, P. Clements, and R. Kazman. I should have read this one when I was a PhD student, but I guess I was too lazy by then.</description>
     </item>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>requirements on Franck Chauvel</title>
+    <link>//fchauvel.github.io/categories/requirements/</link>
+    <description>Recent content in requirements on Franck Chauvel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="//fchauvel.github.io/categories/requirements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Writing Effective Use-cases, by A. Cookburn</title>
+      <link>//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/</link>
+      <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>//fchauvel.github.io/2020/11/29/writing-effective-use-cases-by-a.-cookburn/</guid>
+      <description>Use cases? Uh &amp;hellip; isn&amp;rsquo;t it one of those UML diagrams with stickmen, boxes, and bubbles? There is more to it, and &amp;ldquo;Writing Effective Use-cases&amp;rdquo; by A. Cockburn is the place to start.
+I am always unsure about how much requirement I need, especially when building prototypes? So, reading about use-cases, I came across it on M. Fowler&amp;rsquo;s post on his &amp;ldquo;Use Cases&amp;rdquo;. It still costs about 30 EUR on Amazon, but I went for it anyway.</description>
+    </item>
+    
+  </channel>
+</rss>
